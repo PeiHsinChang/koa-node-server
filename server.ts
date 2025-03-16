@@ -1,12 +1,6 @@
-import Koa from 'koa';
-
-const app = new Koa();
+import app from "./src/app"; // 載入已組裝好的 Koa 應用
 
 const PORT = 3000;
-
-app.use(async (ctx) => {
-  ctx.body = 'Hello Koa with TypeScript!';
-});
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);

@@ -16,5 +16,22 @@ to make a node server to make APIs request and make http status with chatGpt Hel
 1. npm init
 2. insatll koa
 3. install typescript
-4. setting koa typescript config
+4. setting koa typescript config (ps. no need add type:"module" in package.json)
 5. install eslint
+6. add koa-router & koa-middleware
+
+7. file system like below
+   /koa-server
+   │── /src
+   │ ├── /routes
+   │ │ ├── index.ts
+   │ │ ├── users.ts
+   │ ├── /middleware
+   │ │ ├── logger.ts
+   │ │ ├── errorHandler.ts
+   │ ├── app.ts
+   │── package.json
+   │── server.ts
+   │── tsconfig.json
+   │── .eslintrc.js
+   │── .gitignore
