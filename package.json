@@ -1,0 +1,29 @@
+{
+  "name": "koa-node-server",
+  "version": "1.0.0",
+  "description": "using koa to make a simple server.",
+  "keywords": [
+    "koa",
+    "typescript",
+    "node.js",
+    "eslint"
+  ],
+  "license": "ISC",
+  "author": "pei-hsin chang",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "ts-node server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "koa": "^2.16.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
