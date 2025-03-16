@@ -12,7 +12,7 @@
   "author": "pei-hsin chang",
   "main": "server.ts",
   "scripts": {
-    "dev": "ts-node server.ts",
+    "dev": "nodemon server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -33,6 +33,7 @@
     "@typescript-eslint/parser": "^8.26.1",
     "eslint": "^9.22.0",
     "globals": "^16.0.0",
+    "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.1"

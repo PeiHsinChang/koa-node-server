@@ -5,6 +5,7 @@ import errorHandler from "./middleware/errorHandler";
 import logger from "./middleware/logger";
 import indexRoutes from "./routes/index";
 import userRoutes from "./routes/users";
+import stockRoutes from "./routes/stockService";
 
 
 const app = new Koa();
@@ -18,6 +19,8 @@ app.use(bodyParser());
 // 註冊路由
 router.use("/", indexRoutes.routes());
 router.use("/users", userRoutes.routes());
+router.use("/stocks", stockRoutes.routes());
+
 app.use(router.routes()).use(router.allowedMethods());
 
 export default app; // ✅ 匯出 Koa 應用

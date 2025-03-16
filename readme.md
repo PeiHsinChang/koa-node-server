@@ -19,8 +19,10 @@ to make a node server to make APIs request and make http status with chatGpt Hel
 4. setting koa typescript config (ps. no need add type:"module" in package.json)
 5. install eslint
 6. add koa-router & koa-middleware
+7. add tw stock api services
+8. add nodemon for automatically restarting
 
-7. file system like below
+9. file system like below
    /koa-server
    │── /src
    │ ├── /routes
@@ -29,6 +31,8 @@ to make a node server to make APIs request and make http status with chatGpt Hel
    │ ├── /middleware
    │ │ ├── logger.ts
    │ │ ├── errorHandler.ts
+   │ ├── /services
+   │ │ ├── some services \*.ts  
    │ ├── app.ts
    │── package.json
    │── server.ts

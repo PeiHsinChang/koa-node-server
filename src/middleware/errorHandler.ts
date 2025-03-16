@@ -1,5 +1,4 @@
-import { Context, Next } from "koa";
-
+import {Context,Next}from "koa";
 const errorHandler = async (ctx: Context, next: Next) => {
   try {
     await next();
